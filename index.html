@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--Adding JQuery-->
+    <!--Adding JQuery, Moment.js, and Firebase Integration-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
 </head>
 <body>
 
-    
-
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center">Train Schedule</h1>
-            <h3 class="text-center">Choo Choo. Chee Chee.</p>
+            <h1 class="text-center">Tower City Train Schedule</h1>
+            <h2 class="text-center">Cleveland, Ohio<h2>
+            <h6 class="text-center font-italic">"The Greatest City of All Time" ~ Rahul Raj, Cleveland Resident</h6>
         </div>
 
         <div class="row">
@@ -36,7 +35,7 @@
                                 <tr>
                                     <th scope="col">Train Name</th>
                                     <th scope="col">Destination</th>
-                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Frequency (min)</th>
                                     <th scope="col">Next Arrival</th>
                                     <th scope="col">Minutes Away</th>
                                 </tr>
@@ -53,11 +52,9 @@
      
         <div class="row">
             <div class="col-md-12">
-                <!-- Add Employee  -->
                 <div class="card mb-4">
                     <div class="card-header">Add Train</div>
                     <div class="card-body">
-                    <!-- Entry Form -->
                         <form>
                             <div class="form-group">
                                 <label for="train-name-input">Train Name</label>
@@ -82,7 +79,6 @@
             </div>
         </div>
     </div>
-
     <script src="assets/javascript/app.js"></script>
     
 </body>
